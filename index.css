@@ -1,78 +1,117 @@
 /*
   1. Use a more-intuitive box-sizing model.
 */
-*, *::before, *::after {
-    box-sizing: border-box;
-  }
-  
-  /*
-    2. Remove default margin
-  */
-  * {
-    margin: 0;
-  }
-  
-  /*
-    Typographic tweaks!
-    3. Add accessible line-height
-    4. Improve text rendering
-  */
-  body {
-    line-height: 1.5;
-    -webkit-font-smoothing: antialiased;
-  }
-  
-  /*
-    5. Improve media defaults
-  */
-  img, picture, video, canvas, svg {
-    display: block;
-    max-width: 100%;
-  }
-  
-  /*
-    6. Remove built-in form typography styles
-  */
-  input, button, textarea, select {
-    font: inherit;
-  }
-  
-  /*
-    7. Avoid text overflows
-  */
-  p, h1, h2, h3, h4, h5, h6 {
-    overflow-wrap: break-word;
-  }
-  
-  /*
-    8. Create a root stacking context
-  */
-  #root, #__next {
-    isolation: isolate;
-  }
-
-/*----------------------------------------------------------------------------*/
-
-.magnify {
-width: 2vw;
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
-.search{
-    /* appearance: none; */
-    border-radius: 50px;
-    background-color: rgb(240,239,239);
-    width: 30vw;
+/*
+  2. Remove default margin
+*/
+* {
+  margin: 0;
 }
 
-.notification-bell svg{
-    width: 2vw;
+/*
+  Typographic tweaks!
+  3. Add accessible line-height
+  4. Improve text rendering
+*/
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
 }
 
-.profile-pic img{
-    border-radius: 50%;
+/*
+  5. Improve media defaults
+*/
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
 }
 
-.name p {
-    font-weight: bold;
-    font-size: 2vw;
+/*
+  6. Remove built-in form typography styles
+*/
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/*
+  7. Avoid text overflows
+*/
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+/*
+  8. Create a root stacking context
+*/
+#root,
+#__next {
+  isolation: isolate;
+}
+
+/*----------main-div styling--------------------------*/
+.main-div {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  grid-template-rows: 100vh;
+}
+
+/*----------side-bar--------------*/
+.side-bar {
+  grid-column: 1/2;
+  background-color: blue;
+  border: 1px solid blue;
+}
+
+/*----------parent-div------------------*/
+
+.parent-div {
+  display: grid;
+  grid-template-rows: 1fr 5fr;
+  grid-column: 2/3;
+  background-color: brown;
+  border: 1px solid brown;
+}
+
+/*-------------------header-------------*/
+
+.header {
+  background-color: red;
+}
+
+/*----------------content-container-------------*/
+
+.content-container {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+}
+
+/*---------------------projects----------------*/
+
+.projects {
+  background-color: green;
+}
+
+/*----------------announcements-------------------*/
+
+.announcements {
+  background-color: aqua;
 }
