@@ -76,16 +76,36 @@ h6 {
 
 /*----------side-bar--------------*/
 .side-bar {
+  display: grid;
   grid-column: 1/2;
   background-color: blue;
   border: 1px solid blue;
+  grid-template-rows: 2fr 6fr 3fr 8fr;
+}
+
+/*------------dashboard----------------*/
+
+.dashboard{
+background-color: chartreuse;
+}
+
+/*-----------home-group----------------*/
+
+.home-group {
+background-color: darkturquoise;
+}
+
+/*-------------settings-group------------*/
+
+.settings-group{
+background-color: blueviolet;
 }
 
 /*----------parent-div------------------*/
 
 .parent-div {
   display: grid;
-  grid-template-rows: 1fr 5fr;
+  grid-template-rows: 1fr 4fr;
   grid-column: 2/3;
   background-color: brown;
   border: 1px solid brown;
