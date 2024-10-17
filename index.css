@@ -71,16 +71,22 @@ h6 {
 .main-div {
   display: grid;
   grid-template-columns: 1fr 4fr;
-  grid-template-rows: 100vh;
+  
+  position: relative;
 }
 
 /*----------side-bar--------------*/
 .side-bar {
+  
   display: grid;
+  
   grid-column: 1/2;
   background-color: blue;
   border: 1px solid blue;
   grid-template-rows: 2fr 6fr 3fr 8fr;
+  
+  
+  
 }
 
 /*------------dashboard----------------*/
@@ -105,16 +111,18 @@ background-color: blueviolet;
 
 .parent-div {
   display: grid;
-  grid-template-rows: 1fr 4fr;
+  grid-template-rows: 150px 4fr;
   grid-column: 2/3;
   background-color: brown;
   border: 1px solid brown;
+  height: 100%;
 }
 
 /*-------------------header-------------*/
 
 .header {
   background-color: red;
+  
 }
 
 /*----------------content-container-------------*/
@@ -126,12 +134,45 @@ background-color: blueviolet;
 
 /*---------------------projects----------------*/
 
+
+
 .projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   background-color: green;
+  gap: 10px;
+  padding: 25px;
 }
+
+
+
+.projects div {
+  border: 1px solid black;
+  margin: 10px;
+  padding: 20px;
+}
+
+.projects p {
+  grid-column: 1/3;
+  padding-left: 10px;
+}
+
+.project-icons {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  justify-items: end;
+}
+
+.project-icons svg {
+  width: 20px;
+  
+}
+
 
 /*----------------announcements-------------------*/
 
 .announcements {
   background-color: aqua;
 }
+
+
