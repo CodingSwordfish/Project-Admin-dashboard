@@ -130,6 +130,7 @@ background-color: blueviolet;
 .content-container {
   display: grid;
   grid-template-columns: 3fr 1fr;
+  
 }
 
 /*---------------------projects----------------*/
@@ -196,8 +197,43 @@ strong {
 
 /*----------------announcements-------------------*/
 
-.announcements {
-  background-color: aqua;
+.announcements-trending {
+  display: grid;
+  grid-template-rows: 4fr 3fr;
+  background-color: rgb(222,222,249);
+  padding-top: 95px;
+  padding-bottom: 33px;
+  gap: 60px;
 }
 
+.announcements {
+  background-color: purple;
+  margin: 0px 25px;
+  border-radius: 15px;
+  position: relative;
+  background-color: #fff;
+}
 
+.trending {
+  background-color: orange;
+  margin: 0px 25px;
+  border-radius: 15px;
+  position: relative;
+  background-color: #fff;
+}
+
+.announcements p {
+position: absolute;
+top: -65px;
+font-weight: bold;
+  font-size: 20px;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.trending p {
+  position: absolute;
+  top: -35px;
+  font-weight: bold;
+  font-size: 20px;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
